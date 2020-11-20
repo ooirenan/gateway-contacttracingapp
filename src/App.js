@@ -21,7 +21,7 @@ class App extends React.Component {
       <div className="App">
         <Navbar />
         <Meeting />
-        <button onCLick={this.togglePopup.bind(this)}>show popup</button>
+        <button onClick={this.togglePopup.bind(this)}>show popup</button>
         {this.state.showPopup ? (
         <Popup text="Close Me" closePopup={this.togglePopup.bind(this)} />
         ) : null}
