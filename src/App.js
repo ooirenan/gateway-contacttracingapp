@@ -11,6 +11,11 @@ class App extends React.Component {
       showPopup: false
     };
   };
+  togglePopup() {
+    this.setState({
+      showPopup: !this.state.showPopup
+    });
+  };
   render(){
     return (
       <div className="App">
