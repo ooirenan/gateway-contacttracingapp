@@ -19,9 +19,8 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <Navbar />
+        <Navbar toggle={this.togglePopup.bind(this)}/>
         <Meeting />
-        <button onCLick={this.togglePopup.bind(this)}>show popup</button>
         {this.state.showPopup ? (
         <Popup text="Close Me" closePopup={this.togglePopup.bind(this)} />
         ) : null}
