@@ -22,7 +22,7 @@ class App extends React.Component {
         <Navbar toggle={this.togglePopup.bind(this)}/>
         <Meeting />
         {this.state.showPopup ? (
-        <Popup text="Close Me" closePopup={this.togglePopup.bind(this)} />
+        <Popup text="Close" closePopup={this.togglePopup.bind(this)} />
         ) : null}
 
       <h3>Hackbridge Gateway - Contact Tracing App</h3>
